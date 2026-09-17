@@ -472,6 +472,3 @@ html { scroll-behavior: smooth; }
   .lysboks { padding: 3rem .5rem; }
   .lysboks__pil { top: auto; bottom: .25rem; transform: none; }
 }
-
-/* Kun i demoudgaven */
-.demobjaelke { background: #2b2a28; color: #fff; text-align: center; font-size: .85rem; padding: .4rem 1rem; }
