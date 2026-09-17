@@ -251,8 +251,8 @@ li ul { margin-top: .15rem; list-style: circle; }
 /* Mørk "Vil du høre mere?"-boks */
 .opringning { background: var(--mørk); color: #fff; padding: 1.75rem 1.5rem; }
 .opringning h2 { color: #fff; font-size: 1.5rem; }
-.opringning .samtykke { font-size: .8rem; }
-.opringning .samtykke a { color: #fff; }
+.opringning .formular-info { font-size: .8rem; }
+.opringning .formular-info a { color: #fff; }
 
 /* --- Formularer --------------------------------------------------------- */
 .felt-raekke { display: grid; gap: 0 1rem; }
@@ -264,8 +264,7 @@ li ul { margin-top: .15rem; list-style: circle; }
 }
 .opringning .felt input { background: #fff; border-color: #fff; }
 .felt textarea { resize: vertical; }
-.samtykke { display: flex; align-items: flex-start; gap: .6rem; font-size: .85rem; }
-.samtykke input { width: auto; flex: none; margin-top: .25rem; accent-color: var(--accent); }
+.formular-info { font-size: .85rem; margin: 0 0 1rem; }
 button[type="submit"] { width: 100%; }
 /* Honeypot: flyttes ud af skærmen, IKKE display:none — det genkender mange bots */
 .fnugfelt { position: absolute; left: -9999px; }
