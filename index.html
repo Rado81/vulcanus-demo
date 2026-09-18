@@ -29,6 +29,10 @@
       "vatID": "DK45270432",
       "taxID": "45270432",
       "image": "https://vulcanus.dk/assets/logo.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vulcanus.dk/assets/logo.png"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Engvej 230",
@@ -46,6 +50,7 @@
       "@id": "https://vulcanus.dk/profil/#person",
       "name": "Jan Christensen",
       "jobTitle": "Eksamineret skadekonsulent",
+      "url": "https://vulcanus.dk/profil/",
       "worksFor": {
         "@id": "https://vulcanus.dk/#virksomhed"
       },
@@ -58,6 +63,77 @@
           "name": "Forsikringsakademiet"
         }
       }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://vulcanus.dk/#article",
+      "headline": "Uvildig rådgivning ved forsikringsskader i Danmark",
+      "description": "Uvildig og certificeret rådgivning til private ved forsikringsskader. 20+ års erfaring med skadeopgørelse. Gratis screening af din skade – hele Danmark.",
+      "inLanguage": "da-DK",
+      "mainEntityOfPage": "https://vulcanus.dk/",
+      "author": {
+        "@id": "https://vulcanus.dk/profil/#person"
+      },
+      "publisher": {
+        "@id": "https://vulcanus.dk/#virksomhed"
+      },
+      "datePublished": "2026-09-18",
+      "dateModified": "2026-09-18",
+      "image": "https://vulcanus.dk/img/radgiver-moedebord-1600.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vulcanus.dk/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kan man forhandle med en taksator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Taksatorens beregning er et udspil baseret på hans vurdering af skaden og policen. En dokumenteret modberegning med henvisning til policens vilkår er den normale måde at flytte den på."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Er forsikringsselskabets taksator uvildig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej. Taksatoren er ansat eller engageret af forsikringsselskabet. Taksatorer er fagfolk, men de repræsenterer ikke dig."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvornår har jeg ret til restværdierstatning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Når din police indeholder dækningen, og skadeprocenten overstiger policens grænse – typisk 50 % af bygningens nyværdi. Det kræver normalt, at du faktisk bygger nyt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvad koster det at klage til Ankenævnet for Forsikring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "300 kr. Du får gebyret retur, hvis du får medhold, eller hvis nævnet ikke kan afgøre sagen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan Ankenævnet behandle erhvervsforsikringer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej. Nævnet behandler kun private forsikringer – og kun dine egne, ikke modpartens selskab."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dækker Vulcanus hele landet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Kontoret ligger i Aabybro i Nordjylland, og vi tager sager i hele Danmark."
+          }
+        }
+      ]
     }
   ]
 }</script><script src="/vulcanus-demo/assets/js/samtykke.js" defer></script>
@@ -85,9 +161,9 @@
   <div class="hero__billede hero__skift hero__skift--4">
     <div class="hero__slide"><picture><source type="image/avif" srcset="/vulcanus-demo/img/radgiver-moedebord-480.avif 480w, /vulcanus-demo/img/radgiver-moedebord-960.avif 960w, /vulcanus-demo/img/radgiver-moedebord-1600.avif 1600w" sizes="(max-width: 700px) 100vw, 960px"><source type="image/webp" srcset="/vulcanus-demo/img/radgiver-moedebord-480.webp 480w, /vulcanus-demo/img/radgiver-moedebord-960.webp 960w, /vulcanus-demo/img/radgiver-moedebord-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 960px"><img src="/vulcanus-demo/img/radgiver-moedebord-960.jpg" alt="Rådgiver gennemgår en forsikringssag med kunde ved mødebordet" width="960" height="640" loading="eager" decoding="async"></picture></div>    <div class="hero__slide"><picture><source type="image/avif" srcset="/vulcanus-demo/img/forsikringspapirer-baerbar-480.avif 480w, /vulcanus-demo/img/forsikringspapirer-baerbar-960.avif 960w, /vulcanus-demo/img/forsikringspapirer-baerbar-1600.avif 1600w" sizes="(max-width: 700px) 100vw, 960px"><source type="image/webp" srcset="/vulcanus-demo/img/forsikringspapirer-baerbar-480.webp 480w, /vulcanus-demo/img/forsikringspapirer-baerbar-960.webp 960w, /vulcanus-demo/img/forsikringspapirer-baerbar-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 960px"><img src="/vulcanus-demo/img/forsikringspapirer-baerbar-960.jpg" alt="Gennemgang af forsikringspapirer ved en bærbar computer" width="960" height="640" loading="lazy" decoding="async"></picture></div>    <div class="hero__slide"><picture><source type="image/avif" srcset="/vulcanus-demo/img/husmodel-underskrift-480.avif 480w, /vulcanus-demo/img/husmodel-underskrift-960.avif 960w, /vulcanus-demo/img/husmodel-underskrift-1600.avif 1600w" sizes="(max-width: 700px) 100vw, 960px"><source type="image/webp" srcset="/vulcanus-demo/img/husmodel-underskrift-480.webp 480w, /vulcanus-demo/img/husmodel-underskrift-960.webp 960w, /vulcanus-demo/img/husmodel-underskrift-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 960px"><img src="/vulcanus-demo/img/husmodel-underskrift-960.jpg" alt="Husmodel og underskrift af forsikringsdokument på et skrivebord" width="960" height="640" loading="lazy" decoding="async"></picture></div>    <div class="hero__slide"><picture><source type="image/avif" srcset="/vulcanus-demo/img/haandtryk-radgiver-kunde-480.avif 480w, /vulcanus-demo/img/haandtryk-radgiver-kunde-960.avif 960w, /vulcanus-demo/img/haandtryk-radgiver-kunde-1600.avif 1600w" sizes="(max-width: 700px) 100vw, 960px"><source type="image/webp" srcset="/vulcanus-demo/img/haandtryk-radgiver-kunde-480.webp 480w, /vulcanus-demo/img/haandtryk-radgiver-kunde-960.webp 960w, /vulcanus-demo/img/haandtryk-radgiver-kunde-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 960px"><img src="/vulcanus-demo/img/haandtryk-radgiver-kunde-960.jpg" alt="Håndtryk mellem rådgiver og kunde over husmodel og nøgler" width="960" height="640" loading="lazy" decoding="async"></picture></div>  </div>
   <div class="hero__indhold">
-    <div class="hero__over"><p>Velkommen til Vulcanus Bygnings- og Skadetaksering ApS</p></div>
-    <h1>Uvildig og certificeret rådgivning til private inden for forsikringsskader i Danmark</h1>
-    <div class="hero__under"><h2>– GRATIS SCREENING AF DIN SKADE –</h2>
+    <div class="hero__over"><p>Velkommen til Vulcanus ApS</p></div>
+    <h1>Uvildig rådgivning ved forsikringsskader i Danmark</h1>
+    <div class="hero__under"><p class="hero__screening">– GRATIS SCREENING AF DIN SKADE –</p>
 <p>Din Forsikringsskaderådgiver og Garant for FAIR Play.</p>
 <p>Pålidelig og empatisk bygnings- og skadetaksering med 20+ års erfaring.</p>
 <p>Eksaminerede skadekonsulenter fra Forsikringsakademiet og Specialister i komplekse sager som ejerskifteskader, brandskader med skadegradsberegning og restværdierstatning.</p></div>
@@ -102,9 +178,8 @@
 <div class="ramme to-kol">
 <div class="kol">
 <p class="overlinje">Vulcanus ApS</p>
-<h2>Solid erfaring og kompetence inden for skadeopgørelse</h2>
-<p>Hos Vulcanus Bygnings- og Skadetaksering ApS tilbyder vi pålidelig og grundig håndtering af forsikringsskader. Med over 20 års erfaring inden for skadebehandling og specialisering i store og komplekse sager som brandskader med restværdierstatning og skadegradsberegninger, leverer vi professionelle vurderinger baseret på faglighed og respekt for de involverede parter.</p>
-<p>Vi dækker i hele Danmark, og er stolte af, at kunne tilbyde kompetent og omhyggelig rådgivning i både store og små skadesager.</p>
+<p>En uvildig skadekonsulent arbejder for forsikringstageren – ikke for forsikringsselskabet. Vulcanus ApS i Aabybro vurderer bygningsskader, kontrollerer selskabets erstatningsopgørelse mod police, vilkår og forsikringsaftaleloven og forhandler erstatningen. Vi dækker hele Danmark, er specialister i brandskader med restværdi- og skadegradsberegning og tilbyder gratis screening af din skade.</p>
+<p class="byline">Skrevet af <a href="/vulcanus-demo/profil/">Jan Christensen</a>, eksamineret skadekonsulent (Forsikringsakademiet). Opdateret <time datetime="2026-09-18">18. september 2026</time>.</p>
 <p><a class="knap" href="/vulcanus-demo/profil/">Læs mere om os</a></p>
 </div>
 <div class="kol">
@@ -113,6 +188,19 @@
 </div>
 </section>
 <section class="blok blok--flade">
+<div class="ramme">
+<div class="brødtekst">
+<h2>Det vigtigste kort</h2>
+<ul>
+<li>Forsikringsselskabets taksator er engageret af selskabet. En uvildig rådgiver er engageret af dig.</li>
+<li>Du kan bestride en erstatningsopgørelse: klag først skriftligt til selskabet, derefter til Ankenævnet for Forsikring og til sidst domstolene.</li>
+<li>En klage til Ankenævnet koster 300 kr., som du får retur ved medhold, og tager typisk 6-8 måneder.</li>
+<li>Restværdierstatning giver dig ret til at rive ned og bygge nyt i stedet for at reparere, når skadeprocenten overstiger policens grænse – typisk 50 %.</li>
+<li>Mange policer erstatter til dagsværdi i stedet for nyværdi, når en bygningsdel er værdiforringet med mere end 30 %.</li>
+<li>Vulcanus tilbyder en gratis screening, før du binder dig til noget.</li>
+</ul>
+</div>
+</div>
 <div class="ramme kort-raekke">
 <a class="kort" href="/vulcanus-demo/profil/">
   <picture><source type="image/avif" srcset="/vulcanus-demo/img/forsikringspapirer-baerbar-480.avif 480w, /vulcanus-demo/img/forsikringspapirer-baerbar-960.avif 960w, /vulcanus-demo/img/forsikringspapirer-baerbar-1600.avif 1600w" sizes="(max-width: 700px) 100vw, 960px"><source type="image/webp" srcset="/vulcanus-demo/img/forsikringspapirer-baerbar-480.webp 480w, /vulcanus-demo/img/forsikringspapirer-baerbar-960.webp 960w, /vulcanus-demo/img/forsikringspapirer-baerbar-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 960px"><img src="/vulcanus-demo/img/forsikringspapirer-baerbar-960.jpg" alt="Gennemgang af forsikringspapirer ved en bærbar computer" width="960" height="640" loading="lazy" decoding="async"></picture>
@@ -137,22 +225,95 @@
 </a>
 </div>
 </section>
+<section class="blok">
+<div class="ramme">
+<div class="brødtekst">
+<h2>Hvad er en uvildig skadekonsulent, og hvad er forskellen på den og selskabets taksator?</h2>
+<p>En uvildig skadekonsulent repræsenterer forsikringstageren i skadesagen; taksatoren repræsenterer forsikringsselskabet. De vurderer den samme skade, men svarer til hver sin part.</p>
+<p>Taksatoren fastlægger skadens omfang og erstatningen på selskabets vegne. En uvildig rådgiver udarbejder sin egen omfangsbeskrivelse, gennemgår policens vilkår og udfordrer opgørelsen, hvor den ikke holder. Vulcanus ApS (CVR 45270432) gør dette for private boligejere med skadekonsulenter eksamineret fra Forsikringsakademiet.</p>
+<h2>Hvad er restværdierstatning og skadegradsberegning?</h2>
+<p>Restværdierstatning er en dækning, der betaler for at nedrive de ubeskadigede rester af en bygning og opføre en ny i stedet for at reparere. Skadegradsberegningen (skadeprocenten) afgør, om du har ret til den.</p>
+<p>Skaden opgøres som en andel af bygningens nyværdi. Overstiger andelen policens grænse, kan du vælge at bygge nyt. Grænsen afhænger af policen – 50 % er almindelig, men nogle policer bruger andre satser – så tjek dine egne vilkår. Beregningen er ofte omstridt: I en offentliggjort kendelse fra Ankenævnet for Forsikring opgjorde selskabet skadeprocenten til 18,3 % og afviste restværdierstatning, fordi den lå under 50 %. Få procentpoint kan være forskellen på en reparation og et nyt hus.</p>
+<h2>Nyværdi eller dagsværdi – hvad betaler forsikringen?</h2>
+<p>Nyværdi erstatter, hvad det koster at genoprette det beskadigede som nyt. Dagsværdi fratrækker for alder og slid.</p>
+<p>Almindelige husforsikringsvilkår giver fradrag, når det beskadigede på grund af slid, ælde eller andre omstændigheder er værdiforringet med mere end 30 % af nyværdien. Ifølge Forsikring &amp; Pensions responsa skal afskrivning ske bygningsdel for bygningsdel og bygge på en konkret vurdering. Et samlet fradrag på hele skaden er derfor værd at udfordre.</p>
+</div>
+</div>
+</section>
+<section class="blok blok--flade">
+<div class="ramme">
+<div class="brødtekst">
+<h2>Uvildig rådgiver, advokat, Ankenævnet eller byggesagkyndig – hvem skal du bruge hvornår?</h2>
+<p>Brug en uvildig skadekonsulent, når uenigheden handler om omfang, pris eller beregning. Brug en advokat, når den handler om juridisk ansvar eller er på vej i retten. Ankenævnet er den billige vej, når selskabet har sagt endeligt nej.</p>
+</div>
+<div class="tabel-rul">
+<table>
+<thead>
+<tr>
+<th>Mulighed</th>
+<th>Arbejder for</th>
+<th>Bedst til</th>
+<th>Pris for dig</th>
+<th>Typisk varighed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Selskabets taksator</td>
+<td>Forsikringsselskabet</td>
+<td>Almindelige sager uden uenighed</td>
+<td>Ingen</td>
+<td>Bestemmes af selskabet</td>
+</tr>
+<tr>
+<td>Uvildig skadekonsulent (fx Vulcanus)</td>
+<td>Dig</td>
+<td>Omfang, restværdi, skadegrad, afskrivning, genhusning</td>
+<td>REPLACE_WITH_FEE_MODEL</td>
+<td>Følger skadesagen</td>
+</tr>
+<tr>
+<td>Forsikringsadvokat</td>
+<td>Dig</td>
+<td>Dækningsspørgsmål, retssager</td>
+<td>Timehonorar; retshjælpsdækning kan gælde ved retssag</td>
+<td>Måneder til år</td>
+</tr>
+<tr>
+<td>Ankenævnet for Forsikring</td>
+<td>Neutral</td>
+<td>Skriftlige tvister om private forsikringer</td>
+<td>300 kr., retur ved medhold</td>
+<td>6-8 måneder</td>
+</tr>
+<tr>
+<td>Byggesagkyndig</td>
+<td>Dig</td>
+<td>Rapport om årsag og tilstand</td>
+<td>Pr. rapport</td>
+<td>Dage til uger</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
 <section class="blok blok--moerk">
 <div class="baggrund"><picture><source type="image/avif" srcset="/vulcanus-demo/img/roegalarm-roeg-480.avif 480w, /vulcanus-demo/img/roegalarm-roeg-960.avif 960w, /vulcanus-demo/img/roegalarm-roeg-1600.avif 1600w" sizes="100vw"><source type="image/webp" srcset="/vulcanus-demo/img/roegalarm-roeg-480.webp 480w, /vulcanus-demo/img/roegalarm-roeg-960.webp 960w, /vulcanus-demo/img/roegalarm-roeg-1600.webp 1600w" sizes="100vw"><img src="/vulcanus-demo/img/roegalarm-roeg-960.jpg" alt="Røgalarm omgivet af røg under en brand i hjemmet" width="960" height="640" loading="lazy" decoding="async"></picture></div>
 <div class="ramme">
 <h2>Vores værdier</h2>
-<p>Hos Vulcanus Bygnings- og Skadetaksering ApS vægter vi følgende:</p>
+<p>Hos Vulcanus ApS vægter vi følgende:</p>
 <div class="vaerdier">
 <div>
-<h4>Faglighed:</h4>
+<h3>Faglighed:</h3>
 <p>Vi leverer altid vurderinger baseret på en solid faglig forståelse og mange års erfaring.</p>
 </div>
 <div>
-<h4>Pålidelighed:</h4>
+<h3>Pålidelighed:</h3>
 <p>Vi arbejder diskret, struktureret og præcist, så du kan føle dig tryg gennem hele processen.</p>
 </div>
 <div>
-<h4>Empati:</h4>
+<h3>Empati:</h3>
 <p>Vi er bevidste om, at en skade ofte kan have stor betydning for de berørte, og vi møder alle med respekt og forståelse.</p>
 </div>
 </div>
@@ -160,13 +321,25 @@
 </section>
 <section class="blok">
 <div class="ramme">
-<div class="streg-top">
-<h2>Vores ydelser</h2>
-<p>Vi rådgiver, og bistår gennem hele skadeforløbet – fra skadeanmeldelse til afsluttet udbedring. Ydelserne tilpasses den enkelte sag, og kan omfatte planlægning, koordinering, dialog med forsikringsselskab og håndværkere, kvalitetssikring samt løbende rådgivning. Vi skaber overblik og sikrer en effektiv proces med udgangspunkt i dine behov og en forudgående aftale.</p>
+<div class="brødtekst">
+<h2>Hvad gør du, hvis du er uenig med taksator?</h2>
+<p>Bed om opgørelsen på skrift, få din egen dokumenterede vurdering, og klag til selskabets klageansvarlige, før du går videre.</p>
+<ol>
+<li>Bed om taksatorens rapport og den specificerede beregning.</li>
+<li>Acceptér ikke en kontanterstatning, og begynd ikke nedrivning, før omfanget er aftalt.</li>
+<li>Lad en uvildig rådgiver prissætte skaden ud fra dine policevilkår.</li>
+<li>Klag skriftligt til selskabet. Ankenævnet behandler først sagen, når selskabet har fastholdt afgørelsen eller ikke har svaret.</li>
+<li>Klag online til Ankenævnet med MitID. Du kan stadig gå til domstolene bagefter.</li>
+</ol>
 </div>
-<div class="to-kol">
+<div class="streg-top">
+<h2>Hvordan forløber en skadesag fra anmeldelse til afsluttet udbedring?</h2>
+<p>En stor bygningsskade går gennem anmeldelse, skadebegrænsning, besigtigelse, omfang og beregning, erstatningsopgørelse, tilladelser og udbedring eller genopførelse. Forsinkelser undervejs kan give udgifter, som forsikringen ikke dækker.</p>
+<p>Vulcanus kan planlægge og koordinere sagen, føre dialogen med forsikringsselskab og håndværkere og kvalitetssikre arbejdet til det er afsluttet. Ved brandskader omfatter opgørelsen også lovliggørelse, meromkostninger, rimelige og nødvendige udgifter til genhusning, nedbrydningstilladelse og byggetilladelse.</p>
+</div>
+<div class="to-kol ydelser">
 <div class="kol">
-<h4>Taksering af store skader – hvad kan det indebære?</h4>
+<h3>Taksering af store skader – hvad kan det indebære?</h3>
 <ul>
 <li>Erstatningsopgørelse ift. police og vilkår, samt Forsikringsaftaleloven.<ul>
 <li>Restværdi (50 % eller 80 %)</li>
@@ -182,13 +355,12 @@
 </li>
 </ul>
 <p>Brandskader og andre omfattende skader kræver erfaring og grundighed. Vi sikrer en grundig vurdering og korrekt opgørelse, så alle parter kan få klarhed over situationen og komme sikkert videre.</p>
-<p>Desuden er det vigtigt, at der er fremdrift i sagen, sådan der ikke opstår unødige omkostninger, som falder udenfor forsikringserstatningen.</p>
-<h4>Restværdi og skadegradsberegning</h4>
+<h3>Restværdi og skadegradsberegning</h3>
 <p>Som specialister i beregning af restværdi og skadegrad tilbyder vi veldokumenterede opgørelser, der skaber grundlag for velovervejede beslutninger.</p>
 <p>Vi sikrer fremdrift i sagsgangen – det giver ofte de bedste resultater for dig, din trivsel og økonomi.</p>
 </div>
 <div class="kol">
-<h4>Bygningsskader</h4>
+<h3>Bygningsskader</h3>
 <p>Vi finder og dokumenterer dækningsmuligheder og udfører taksering af bygningsskader, hvad enten der er tale om…</p>
 <ul>
 <li>Bygningsbrand</li>
@@ -205,6 +377,69 @@
 </ul>
 <p>Vores tilgang sikrer, at skadernes omfang bliver nøjagtigt kortlagt og omfangsbestemt.</p>
 </div>
+</div>
+</div>
+</section>
+<section class="blok blok--flade">
+<div class="ramme">
+<div class="brødtekst">
+<h2>Hvad koster en uvildig rådgiver, og hvem betaler?</h2>
+<p>Du betaler selv din egen rådgiver; selskabet betaler kun sin egen taksator. Vulcanus screener din sag gratis og aftaler honoraret, før arbejdet begynder.</p>
+<p>REPLACE_WITH_FEE_MODEL</p>
+<p>Ifølge rådgivningsfirmaet InsureHelp dækker retshjælpsforsikringen ikke udgifter til en sag ved Ankenævnet, så regn med selv at betale for rådgivning. Nogle policer har en bestemmelse om sagkyndig vurdering, hvor udgifterne deles – tjek dine vilkår.</p>
+<h2>Hvordan vælger du en kvalificeret rådgiver?</h2>
+<p>Se efter forsikringsfaglig uddannelse, dokumenteret erfaring med din skadetype og uafhængighed af både forsikringsselskaber og håndværkere.</p>
+<p>Bed om rådgiverens eksamen fra Forsikringsakademiet, eksempler på lignende sager, en skriftlig honoraraftale og en bekræftelse på, at rådgiveren ikke modtager provision fra håndværkere.</p>
+<h2>Hvorfor nedsætter eller afviser forsikringsselskaber bygningsskader?</h2>
+<p>De hyppigste årsager er afskrivning for alder og slid, skader uden for den oplistede dækning, manglende vedligeholdelse, sen anmeldelse og undtagelser i ejerskifteforsikringen.</p>
+<p>Hver af dem kan prøves mod policens ordlyd og forsikringsaftaleloven. I Ankenævnet er det forbrugeren, der skal bevise, at kravet er dækket – derfor er dokumentation afgørende fra første dag.</p>
+<h2>Hvor lang tid tager en uenighed med forsikringsselskabet?</h2>
+<p>En forhandlet ændring af opgørelsen kan være på plads på få uger. En sag i Ankenævnet tager typisk 6-8 måneder, og tiden afhænger især af, hvor mange gange du og selskabet indsender nye oplysninger.</p>
+</div>
+</div>
+</section>
+<section class="blok">
+<div class="ramme">
+<div class="brødtekst">
+<h2>Hvor arbejder Vulcanus?</h2>
+<p>Vulcanus har kontor på Engvej 230, 9440 Aabybro i Nordjylland og tager sager i hele Danmark. Kontakt: <a href="tel:+4523329440">+45 23 32 94 40</a>, <a href="mailto:jc@vulcanus.dk">jc@vulcanus.dk</a>.</p>
+<h2>Hvad gælder i 2026?</h2>
+<p>Klagegebyret til Ankenævnet for Forsikring er 300 kr. – ældre vejledninger nævner stadig 200 kr. Storm- og skybrudsskader er sæsonbetonede: danske søgninger på "stormskade forsikring" nåede 320 i april 2026 mod 70 i en typisk måned (DataForSEO, Google Danmark).</p>
+</div>
+</div>
+</section>
+<section class="blok blok--flade">
+<div class="ramme">
+<div class="brødtekst">
+<h2>Ofte stillede spørgsmål</h2>
+<div class="faq"><h3>Kan man forhandle med en taksator?</h3><p>Ja. Taksatorens beregning er et udspil baseret på hans vurdering af skaden og policen. En dokumenteret modberegning med henvisning til policens vilkår er den normale måde at flytte den på.</p><h3>Er forsikringsselskabets taksator uvildig?</h3><p>Nej. Taksatoren er ansat eller engageret af forsikringsselskabet. Taksatorer er fagfolk, men de repræsenterer ikke dig.</p><h3>Hvornår har jeg ret til restværdierstatning?</h3><p>Når din police indeholder dækningen, og skadeprocenten overstiger policens grænse – typisk 50 % af bygningens nyværdi. Det kræver normalt, at du faktisk bygger nyt.</p><h3>Hvad koster det at klage til Ankenævnet for Forsikring?</h3><p>300 kr. Du får gebyret retur, hvis du får medhold, eller hvis nævnet ikke kan afgøre sagen.</p><h3>Kan Ankenævnet behandle erhvervsforsikringer?</h3><p>Nej. Nævnet behandler kun private forsikringer – og kun dine egne, ikke modpartens selskab.</p><h3>Dækker Vulcanus hele landet?</h3><p>Ja. Kontoret ligger i Aabybro i Nordjylland, og vi tager sager i hele Danmark.</p></div>
+</div>
+</div>
+</section>
+<section class="blok">
+<div class="ramme">
+<div class="streg-bund">
+<h2>Om forfatteren</h2>
+</div>
+<div class="to-kol to-kol--portraet forfatter">
+<div class="kol">
+<figure class="portraet"><picture><source type="image/avif" srcset="/vulcanus-demo/img/jan-christensen-480.avif 480w, /vulcanus-demo/img/jan-christensen-960.avif 960w, /vulcanus-demo/img/jan-christensen-1600.avif 1600w" sizes="(max-width: 700px) 100vw, 400px"><source type="image/webp" srcset="/vulcanus-demo/img/jan-christensen-480.webp 480w, /vulcanus-demo/img/jan-christensen-960.webp 960w, /vulcanus-demo/img/jan-christensen-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 400px"><img src="/vulcanus-demo/img/jan-christensen-960.jpg" alt="Portræt af Jan Christensen, eksamineret skadekonsulent og bygningstaksator hos Vulcanus" width="960" height="1200" loading="lazy" decoding="async"></picture></figure>
+</div>
+<div class="kol">
+<p class="overlinje">Bygningskonstruktør · Eksamineret skadekonsulent · Bygningstaksator</p>
+<p>Jan Christensen er eksamineret skadekonsulent fra Forsikringsakademiet (2014) og uddannet bygningskonstruktør. Han har arbejdet med skader på bygninger siden 2005 – i mere end 18 år som bygningstaksator hos Lærerstandens Brandforsikring med speciale i store brandskader. Siden 2024 har han som selvstændig rådgivet private skadelidte gennem Vulcanus.</p>
+<p><a href="/vulcanus-demo/profil/">Læs mere om Jan Christensen</a> · <a href="REPLACE_WITH_LINKEDIN_URL">LinkedIn</a></p>
+</div>
+</div>
+<div class="brødtekst kilder">
+<h2>Kilder</h2>
+<ol>
+<li><a href="https://ankeforsikring.dk/">Ankenævnet for Forsikring</a>, "Om at klage"</li>
+<li><a href="https://www.forsikringsoplysningen.dk/">Forsikringsoplysningen</a> (Forsikring &amp; Pension), "Hvis du vil klage"</li>
+<li><a href="https://www.retsinformation.dk/">Forsikringsaftaleloven</a> – retsinformation.dk</li>
+<li><a href="https://fogp.dk/">Forsikring &amp; Pension</a>, responsa om afskrivningspraksis</li>
+<li><a href="https://www.forsikringsakademiet.dk/">Forsikringsakademiet</a> – om skadekonsulentuddannelsen</li>
+</ol>
 </div>
 </div>
 </section>
@@ -234,7 +469,7 @@
   <div class="ramme sidefod__kolonner">
     <div>
       <h2 class="sidefod__titel">Vulcanus ApS</h2>
-      <p>Erfarne skadekonsulenter med 15+ års ekspertise sikrer retfærdig skadebehandling med professionalisme og respekt.</p>
+      <p>Erfarne skadekonsulenter med 20+ års ekspertise sikrer retfærdig skadebehandling med professionalisme og respekt.</p>
     </div>
     <div>
       <h2 class="sidefod__titel">Kontakt os</h2>

@@ -122,6 +122,13 @@ p { margin: 0 0 1rem; }
   margin: 0 0 1rem;
 }
 .hero__under p { font-size: clamp(1rem, 1.5vw, 1.2rem); margin: 0 0 .6rem; color: #fff; }
+/* "Gratis screening"-linjen: et afsnit, ikke en overskrift (den var en H2
+ * uden indhold under sig) — men med samme udtryk som .hero__under h2. */
+.hero__under .hero__screening {
+  font-family: var(--font-titel); line-height: 1.2;
+  color: var(--accent); font-size: clamp(1.25rem, 2.4vw, 1.8rem); font-weight: 700;
+  margin: 0 0 1rem;
+}
 .hero--forside .knap { margin-top: 1.5rem; }
 .hero--side { min-height: 25rem; }
 .hero--side h1 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); max-width: 50rem; margin-inline: auto; }
@@ -153,7 +160,7 @@ p { margin: 0 0 1rem; }
  * clip-path — det virker også på iPhone, hvor background-attachment: fixed
  * ikke gør. Mørkt lag: rgb(47 47 46) ved 80 %, målt på den nuværende side. */
 .blok--moerk { color: #fff; background: #2f2f2e; clip-path: inset(0); }
-.blok--moerk h2, .blok--moerk h4 { color: #fff; }
+.blok--moerk h2, .blok--moerk h3, .blok--moerk h4 { color: #fff; }
 .blok--moerk .baggrund { position: fixed; inset: 0; z-index: -2; }
 .blok--moerk .baggrund picture, .blok--moerk .baggrund img {
   position: absolute; inset: 0; width: 100%; height: 100%;
@@ -175,6 +182,7 @@ p { margin: 0 0 1rem; }
   font-family: var(--font-titel); font-weight: 800; letter-spacing: .04em;
   text-transform: uppercase; color: #9a9894; margin-bottom: .4rem;
 }
+.byline { font-size: .9rem; font-style: italic; }
 .billede { margin: 0; }
 .billede img { width: 100%; }
 
@@ -189,6 +197,11 @@ p { margin: 0 0 1rem; }
 
 .vaerdier { display: grid; gap: 0 3rem; margin-top: 1.5rem; }
 .vaerdier h4 { margin-top: 1rem; }
+/* Underoverskrifter på forsiden er H3 (ingen H4 direkte under en H2), men
+ * beholder H4'ernes størrelse. */
+.vaerdier h3, .ydelser h3, .faq h3 { font-size: 1.15rem; margin-top: 1.5rem; }
+.vaerdier h3 { margin-top: 1rem; }
+.ydelser .kol > h3:first-child { margin-top: 0; }
 
 ul { padding-left: 1.2rem; }
 li { margin-bottom: .15rem; }
@@ -314,6 +327,23 @@ button[type="submit"] { width: 100%; }
 .brødtekst { max-width: 50rem; }
 .brødtekst h2 { margin-top: 2rem; }
 
+/* Forsidens spørgsmål-og-svar-sektioner: .brødtekst inde i en .blok */
+.blok .brødtekst > h2:first-child, .blok .streg-top > h2:first-child { margin-top: 0; }
+.blok .brødtekst > :last-child { margin-bottom: 0; }
+.blok .ramme + .ramme, .blok .brødtekst + .streg-top, .blok .to-kol + .kilder { margin-top: 3rem; }
+.faq h3:first-child { margin-top: 0; }
+/* "Om forfatteren": samme opbygning som portrættet på profilsiden, men mindre. */
+.forfatter .portraet { max-width: 14rem; }
+.kilder { font-size: .9rem; }
+
+/* Sammenligningstabel. Ruller vandret på smalle skærme i stedet for at
+ * sprænge sidens bredde. */
+.tabel-rul { overflow-x: auto; margin-top: 1.5rem; }
+.tabel-rul table { width: 100%; min-width: 44rem; border-collapse: collapse; background: var(--hvid); font-size: .95rem; }
+.tabel-rul th, .tabel-rul td { padding: .75rem 1rem; text-align: left; vertical-align: top; border: 1px solid var(--kant); }
+.tabel-rul th { font-family: var(--font-titel); color: #fff; background: var(--mørk); }
+.tabel-rul td:first-child { font-weight: 700; color: var(--overskrift); }
+
 /* --- Sidefod ------------------------------------------------------------ */
 .sidefod { background: var(--mørk); color: #fff; padding-top: 4rem; }
 .sidefod__kolonner { display: grid; gap: 2.5rem; padding-bottom: 3rem; }
@@ -332,6 +362,7 @@ button[type="submit"] { width: 100%; }
   .to-kol { grid-template-columns: 1fr 1fr; gap: 3rem; }
   .to-kol--boks { grid-template-columns: 2fr 1fr; }
   .to-kol--portraet { grid-template-columns: 1fr 2fr; }
+  .to-kol--portraet.forfatter { grid-template-columns: 14rem 1fr; }
   .tre-kol, .kort-raekke { grid-template-columns: repeat(3, 1fr); }
   .vaerdier { grid-template-columns: 1fr 1fr; }
   .felt-raekke { grid-template-columns: 1fr 1fr; }
