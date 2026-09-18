@@ -330,7 +330,9 @@ button[type="submit"] { width: 100%; }
 /* Forsidens spørgsmål-og-svar-sektioner: .brødtekst inde i en .blok */
 .blok .brødtekst > h2:first-child, .blok .streg-top > h2:first-child { margin-top: 0; }
 .blok .brødtekst > :last-child { margin-bottom: 0; }
-.blok .ramme + .ramme, .blok .brødtekst + .streg-top, .blok .to-kol + .kilder { margin-top: 3rem; }
+.blok .ramme + .ramme, .blok .brødtekst + .streg-top, .blok .to-kol + .kilder,
+.blok .brødtekst + .kilder { margin-top: 3rem; }
+.byline + h2 { margin-top: 2rem; }
 .faq h3:first-child { margin-top: 0; }
 /* "Om forfatteren": samme opbygning som portrættet på profilsiden, men mindre. */
 .forfatter .portraet { max-width: 14rem; }
